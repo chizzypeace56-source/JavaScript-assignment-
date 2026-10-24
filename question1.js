@@ -32,5 +32,11 @@ console.log("Subject 2: " + subject2);
 console.log("Subject 3: " + subject3);
 console.log("Total Score: " + totalScore);
 console.log("Remark: " + remark);
- 
+ document.getElementById("gradingOutput").textContent =
+    "Full Name: " + firstName + " " + lastName +
+    "\nSubject 1: " + subject1 +
+    "\nSubject 2: " + subject2 +
+    "\nSubject 3: " + subject3 +
+    "\nTotal Score: " + totalScore +
+    "\nRemark: " + remark;
     
