@@ -1,19 +1,19 @@
 
- // QUESTION 2: FIZZBUZZ CHALLENGE
+const output = [];
 
 for (let number = 1; number <= 100; number++) {
-
     if (number % 3 === 0 && number % 5 === 0) {
-        console.log("FizzBuzz");
-
+        output.push("FizzBuzz");
     } else if (number % 3 === 0) {
-        console.log("Fizz");
-
+        output.push("Fizz");
     } else if (number % 5 === 0) {
-        console.log("Buzz");
-
+        output.push("Buzz");
     } else {
-        console.log(number);
+        output.push(number);
     }
-
 }
+
+console.log(output.join("\n"));
+
+document.getElementById("fizzbuzzOutput").textContent =
+    output.join("\n");
